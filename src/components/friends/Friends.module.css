@@ -1,0 +1,23 @@
+.friends-item{
+    width: 200px;
+    height: 60px;
+    margin-bottom: 15px;
+    display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 5%;
+}
+.avatar-friend{
+    border-radius: 25%;
+    border: 1px solid red;
+}
+.isOnline{
+    width: 14px;
+    height: 14px;
+    margin: 0 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+.name{
+    margin-left: 20px;
+}

@@ -1,4 +1,9 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url(./css/reset.css); 
+@import url(./components/profile/User.module.css);
+@import url(./components/Statistics/Statistics.module.css);
+@import url(./components/friends/Friends.module.css);
+@import url(./components/transactions/transactions.module.css
+);
 
 body {
   margin: 0;
