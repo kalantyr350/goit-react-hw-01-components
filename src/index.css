@@ -1,6 +1,6 @@
 @import url(./css/reset.css); 
-@import url(./components/profile/User.module.css);
-@import url(./components/Statistics/Statistics.module.css);
+/* @import url(./components/profile/User.module.css); */
+/* @import url(./components/Statistics/Statistics.module.css); */
 @import url(./components/friends/Friends.module.css);
 @import url(./components/transactions/transactions.module.css
 );
@@ -17,4 +17,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

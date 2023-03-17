@@ -5,16 +5,16 @@ import PropTypes from 'prop-types';
 
 export const FriendList = ({friends}) => {
     return (
-        <section className="friends">
-            <ul className="friends-list">
+        <section className={css.friends}>
+            <ul className={css.friendsList}>
                 {friends.map(({ avatar, id, isOnline, name }) => {
-                        console.log( id)
+                        // console.log( id) 
 
                     return (
-                        <li key={id} className="friends-item">
+                        <li key={id} className={css.friendsItem}>
                             <span className={clsx(css.status, !isOnline && css.isOutLined)}></span>
-                            <img className="avatar-friend" src={avatar} alt="User avatar" width="48"/>
-                            <p className="name">{name}</p>
+                            <img className={css.avatarFriend} src={avatar} alt="User avatar" width="48"/>
+                            <p className={css.name}>{name}</p>
                         </li>
                     )
                 })}
