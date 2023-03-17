@@ -11,13 +11,16 @@
     border-radius: 25%;
     border: 1px solid red;
 }
-.isOnline{
+.status{
     width: 14px;
     height: 14px;
     margin: 0 15px;
-    background-color: red;
+    background-color: green;
     border-radius: 50%;
 }
 .name{
     margin-left: 20px;
+}
+.isOutLined{
+    background-color: red;
 }
