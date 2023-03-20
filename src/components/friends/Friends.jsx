@@ -3,16 +3,20 @@ import PropTypes from 'prop-types';
 import FriendListItem from './cartFriend';
 
 export function FriendList({ friends }) {
+  // console.log(friends)
     return (
-    <ul className={css.friendsList}>
-        {friends.map(({avatar,name,isOnline, id}) => (
-                    <FriendListItem
-                        avatar={avatar}
-                        name={name}
-                        isOnline={isOnline}
-                        key={id}
-                    />
-        ))}
+      <ul className={css.friendsList}>
+        {friends.map(({ avatar, id, name, isOnline }) => {
+            // console.log(id)
+          return(
+            <FriendListItem
+              avatar={avatar}
+              name={name}
+              isOnline={isOnline}
+              id={id}
+            />
+          )
+        })}
     </ul>
     );
 }
@@ -23,6 +27,6 @@ FriendList.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-      key: PropTypes.number.isRequired,
+      id: PropTypes.number.isRequired,
      })
 )};
