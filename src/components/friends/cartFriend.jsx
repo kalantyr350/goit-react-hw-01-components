@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import css from './Friends.module.css';
 
-export default function FriendListItem({ avatar, id, name, isOnline }) {
-  console.log(id)
+export default function FriendListItem({ avatar,  name, isOnline }) {
+
   return (
-    <li key={id} className="item" >
+    <li className="item" >
       <span className={clsx(css.status, !isOnline && css.isOutLined)}>
         {isOnline}
       </span>

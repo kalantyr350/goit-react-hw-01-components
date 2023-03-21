@@ -6,17 +6,14 @@ export function FriendList({ friends }) {
   // console.log(friends)
     return (
       <ul className={css.friendsList}>
-        {friends.map(({ avatar, id, name, isOnline }) => {
-            // console.log(id)
-          return(
-            <FriendListItem
-              id={id}
-              avatar={avatar}
-              name={name}
-              isOnline={isOnline}
+        {friends.map(({ avatar,  name, isOnline, id }) => (
+          <FriendListItem
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
+            key={id}
             />
-          )
-        })}
+        ))}
     </ul>
     );
 }
