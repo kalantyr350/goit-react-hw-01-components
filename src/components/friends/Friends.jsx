@@ -11,7 +11,7 @@ export function FriendList({ friends }) {
             avatar={avatar}
             name={name}
             isOnline={isOnline}
-            key={id}
+            id={id}
             />
         ))}
     </ul>
@@ -24,6 +24,6 @@ FriendList.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-      key: PropTypes.number.isRequired,
+      id: PropTypes.number.isRequired,
      })
 )};
