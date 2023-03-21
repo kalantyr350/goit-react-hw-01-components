@@ -10,10 +10,10 @@ export function FriendList({ friends }) {
             // console.log(id)
           return(
             <FriendListItem
+              id={id}
               avatar={avatar}
               name={name}
               isOnline={isOnline}
-              id={id}
             />
           )
         })}
@@ -27,6 +27,6 @@ FriendList.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-      id: PropTypes.number.isRequired,
+      key: PropTypes.number.isRequired,
      })
 )};
